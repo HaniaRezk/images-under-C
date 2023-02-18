@@ -1,20 +1,6 @@
 //
 #include <stdio.h>
 #include<stdlib.h>
-/*void saveimage(int h, int l, int vmax, char *nomfichier, int matrix[][l]){
-    FILE* f=fopen(nomfichier, "w");
-    fprintf(f,"%s\n", "P2");
-    fprintf(f,"%d ",l);
-    fprintf(f,"%d\n", h);
-    fprintf(f,"%d\n", vmax);
-    for (int i=1; i<l-1; i++){
-      for (int j=1; j<h-1; j++){
-          fprintf(f,"%d ", (matrix[i-1][j-1]+matrix[i-1][j]+matrix[i][j-1]+matrix[i+1][j+1])/4);
-          }
-       }
-    fclose(f);
-    }
-*/
 void saveimage(int h, int l, int vmax, char *nomfichier, int matrix[][700]){
     FILE* f=fopen(nomfichier, "w");
     fprintf(f,"%s\n", "P2");
