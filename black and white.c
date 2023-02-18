@@ -1,35 +1,6 @@
-//
-//  exo52.c
-//  
-//
-//  Created by Hania Rezk on 25/11/2022.
-//
 
-//
-
-//
 #include <stdio.h>
 #include<stdlib.h>
-/*void saveimage(int h, int l, int vmax, char *nomfichier, int matrix[][l]){
-    FILE* f=fopen(nomfichier, "w");
-    fprintf(f,"%s\n", "P2");
-    fprintf(f,"%d ",l);
-    fprintf(f,"%d\n", h);
-    fprintf(f,"%d\n", vmax);
-    for (int i=0; i<l; i++){
-      for (int j=0; j<h; j++){
-          if ((matrix[i][j])<vmax/2){
-              fprintf(f,"%d ", 0);
-          }
-          else{
-              fprintf(f,"%d ", vmax);
-              
-          }
-       }
-    }
-    fclose(f);
-}
-*/
 void saveimage(int h, int l, int vmax, char *nomfichier, int matrix[][700]){
     FILE* f=fopen(nomfichier, "w");
     fprintf(f,"%s\n", "P2");
